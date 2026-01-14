@@ -38,3 +38,4 @@ if (!process.env.TOKEN) {
   client.login('ODQxNDc0ODU0ODAwMzI2NjY3.GqJRdN._sKnuPM2tuYMoXQtqp8Y9K23k_6I3piO6ugLVE'); // <-- Remplace par process.env.TOKEN si tu utilises .env
 }
 
+
