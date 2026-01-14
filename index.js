@@ -16,7 +16,7 @@ client.once("ready", () => {
   });
 });
 
-  client.user.setActivity("By Youssef 👑", { type: "WATCHING" });
+  client.user.setActivity("By Youssef 👑", { type: "WATCHING" })
 });
 
 client.on("messageCreate", message => {
@@ -35,8 +35,9 @@ if (!process.env.TOKEN) {
   console.log("TOKEN MISSING ❌");
 } else {
   console.log("TOKEN OK ✔️");
-  client.login(process.env.TOKEN.trim());
+ client.login('ODQxNDc0ODU0ODAwMzI2NjY3.GqJRdN._sKnuPM2tuYMoXQtqp8Y9K23k_6I3piO6ugLVE');
 }
+
 
 
 
