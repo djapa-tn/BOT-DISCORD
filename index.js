@@ -14,9 +14,9 @@ client.once("ready", () => {
     }],
     status: "dnd" // online | idle | dnd | invisible
   });
-});
 
-  client.user.setActivity("By Youssef 👑", { type: "WATCHING" })
+  // Si tu veux ajouter setActivity, tu peux, mais c'est déjà fait dans setPresence
+  // client.user.setActivity("By Youssef 👑", { type: "WATCHING" });
 });
 
 client.on("messageCreate", message => {
@@ -35,9 +35,5 @@ if (!process.env.TOKEN) {
   console.log("TOKEN MISSING ❌");
 } else {
   console.log("TOKEN OK ✔️");
- client.login('ODQxNDc0ODU0ODAwMzI2NjY3.GqJRdN._sKnuPM2tuYMoXQtqp8Y9K23k_6I3piO6ugLVE');
+  client.login('TON_TOKEN_ICI'); // <-- Remplace par process.env.TOKEN si tu utilises .env
 }
-
-
-
-
