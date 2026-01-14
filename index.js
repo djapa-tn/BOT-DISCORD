@@ -6,6 +6,16 @@ const client = new Client({
 
 client.once("ready", () => {
   console.log("BOT IS ONLINE!");
+
+  client.user.setPresence({
+    activities: [{
+      name: "By Youssef 👑 | /help",
+      type: 3 // WATCHING
+    }],
+    status: "dnd" // online | idle | dnd | invisible
+  });
+});
+
   client.user.setActivity("By Youssef 👑", { type: "WATCHING" });
 });
 
@@ -27,5 +37,6 @@ if (!process.env.TOKEN) {
   console.log("TOKEN OK ✔️");
   client.login(process.env.TOKEN.trim());
 }
+
 
 
