@@ -21,4 +21,11 @@ client.on("messageCreate", message => {
   }
 });
 
-client.login(process.env.TOKEN);
+if (!process.env.TOKEN) {
+  console.log("TOKEN MISSING ❌");
+} else {
+  console.log("TOKEN OK ✔️");
+  client.login(process.env.TOKEN.trim());
+}
+
+
